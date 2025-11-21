@@ -1,0 +1,15 @@
+#include <stdio.h>
+int digitSum(int n) {
+     if (n == 0)
+        return 0;
+   return (n % 10) + digitSum(n / 10);
+}
+int main() {
+    int num;
+  printf("Enter a number: ");
+    scanf("%d", &num);
+  int sum = digitSum(num);
+ printf("Sum of digits = %d\n", sum);
+
+   return 0;
+}     
